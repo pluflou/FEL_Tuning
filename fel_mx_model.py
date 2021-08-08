@@ -4,7 +4,7 @@ from constants import m_e, e, c, hc, I_A, K_u, lambda_u, k_u, L_u, eta, JJ
 def resonantLambda(gamma_beam, K_u, lambda_u):
     return lambda_u * (1 + K_u**2 /2) / (2 * gamma_beam**2)
 
-def rhoFEL(current_beam, sigma_beam, gamma_beam):
+def rhoFEL(current_beam, sigma_beam, gamma_besam):
     rho = 1/4 * (current_beam/I_A/ np.pi**2 * lambda_u**2/gamma_beam**3/sigma_beam**2 * (K_u*JJ)**2)**(1/3)
     return rho
 
